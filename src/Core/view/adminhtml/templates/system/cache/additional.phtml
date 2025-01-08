@@ -1,0 +1,42 @@
+<?php
+/**
+ * Block for additional cache management options in the admin panel.
+ *
+ * @var \Magento\Backend\Block\Cache\Permissions|null $permissions
+ * @var \Magento\Framework\View\Helper\SecureHtmlRenderer $secureRenderer
+ */
+$permissions = $block->getData("permissions");
+
+// Check if permissions are available and user has access to additional actions
+if ($permissions && $permissions->hasAccessToAdditionalActions()): ?>
+    <div class="additional-cache-management">
+        <h2>
+            <span>
+                <?= $block->escapeHtml(
+                    __("Additional Cache Management")
+                ) ?>
+            </span>
+        </h2>
+        <?php if ($permissions->hasAccessToFlushCatalogImages()): ?>
+            <!-- Button to flush catalog images cache -->
+            <p>
+                <button id="flushCatalogImages" type="button">
+                    <?= $block->escapeHtml(__("Flush Catalog Images Cache")) ?>
+                </button>
+                <?= /* @noEscape */ $secureRenderer->renderEventListenerAsTag(
+                    "onclick",
+                    'setLocation(\'' .
+                    $block->escapeJs($block->getCleanImagesUrl()) .
+                    '\')',
+                    "button#flushCatalogImages"
+                ) ?>
+                <span>
+                    <?= $block->escapeHtml(
+                        __("Pregenerated product images files")
+                    ) ?>
+                </span>
+            </p>
+        <?php endif; ?>
+        <?= $block->getChildHtml() ?>
+    </div>
+<?php endif; ?>

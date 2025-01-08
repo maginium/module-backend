@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<page
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd"
+>
+    <!-- Reference the cache.additional block -->
+    <referenceBlock name="cache.additional">
+        <!-- Set the template for the cache.additional block -->
+        <action method="setTemplate">
+            <!-- Specify the template file path -->
+            <argument xsi:type="string" name="template">Maginium_Backend::system/cache/additional.phtml</argument>
+        </action>
+    </referenceBlock>
+</page>

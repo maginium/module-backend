@@ -1,0 +1,99 @@
+{
+  "name": "maginium/module-backend",
+  "description": "Maginium Backend module for Magento 2. A foundational utility package that provides advanced backend tools, UI enhancements, and integration features to streamline e-commerce management.",
+  "type": "magento2-module",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Maginium",
+      "role": "Technical Support",
+      "email": "support@maginium.com",
+      "homepage": "https://www.maginium.com"
+    }
+  ],
+  "homepage": "https://www.maginium.com",
+  "support": {
+    "issues": "https://www.maginium.com/issues",
+    "source": "https://github.com/maginium/module-backend",
+    "email": "support@maginium.com",
+    "docs": "https://docs.maginium.com/backend"
+  },
+  "keywords": [
+    "backend utilities",
+    "magento 2 backend",
+    "maginium extensions",
+    "ecommerce tools",
+    "magento admin",
+    "ui management",
+    "advanced configurations",
+    "admin dashboard",
+    "backend modules"
+  ],
+  "prefer-stable": true,
+  "minimum-stability": "stable",
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "require": {
+    "php": ">=8.2",
+    "magento/module-backend": "*",
+    "maginium/module-framework": "*",
+    "maginium/module-admin-panel": "*"
+  },
+  "require-dev": {
+    "laravel/pint": "^1.13",
+    "mockery/mockery": "^1.5",
+    "phpunit/phpunit": "^10.3",
+    "phpstan/phpstan": "^1.10",
+    "friendsofphp/php-cs-fixer": "^3.19"
+  },
+  "autoload": {
+    "files": [
+      "src/Core/registration.php",
+      "src/ScopeHint/registration.php",
+      "src/DisableInlineEditing/registration.php"
+    ],
+    "psr-4": {
+      "Maginium\\Backend\\": "src/Core/",
+      "Maginium\\ScopeHint\\": "src/ScopeHint/",
+      "Maginium\\DisableInlineEditing\\": "src/DisableInlineEditing/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Maginium\\Backend\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "post-install-cmd": [],
+    "post-update-cmd": [],
+    "lint": [
+      "php-cs-fixer fix --dry-run",
+      "phpstan analyse"
+    ],
+    "fix": [
+      "php-cs-fixer fix"
+    ],
+    "test": [
+      "phpunit --stop-on-failure"
+    ]
+  },
+  "extra": {
+    "magento-version": ">=2.4",
+    "classmap-authoritative": true,
+    "patches": {
+      "magento/framework": {}
+    }
+  },
+  "archive": {
+    "exclude": [
+      "/tests",
+      "/.github",
+      "/.gitignore",
+      "/composer.lock",
+      "/phpunit.xml"
+    ]
+  }
+}

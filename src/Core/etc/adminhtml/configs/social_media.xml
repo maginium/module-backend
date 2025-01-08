@@ -1,0 +1,152 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/config.xsd">
+    <!-- General Section -->
+    <!-- Social Media Configuration -->
+    <group id="social_links" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="140" translate="label">
+        <label>Social Media Configuration</label>
+
+        <!-- Facebook -->
+        <group id="facebook" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+            <label>Facebook Settings</label>
+
+            <field id="facebook_enable" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="select">
+                <label>Enable Facebook</label>
+                <frontend_class>on-off-trigger</frontend_class>
+                <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+            </field>
+
+            <field id="facebook_link" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="20" translate="label" type="text">
+                <label>Facebook Link</label>
+                <depends>
+                    <field id="facebook_enable">1</field>
+                </depends>
+            </field>
+        </group>
+
+        <!-- Twitter -->
+        <group id="twitter" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="20" translate="label">
+            <label>Twitter Settings</label>
+
+            <field id="twitter_enable" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="select">
+                <label>Enable Twitter</label>
+                <frontend_class>on-off-trigger</frontend_class>
+                <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+            </field>
+
+            <field id="twitter_link" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="20" translate="label" type="text">
+                <label>Twitter Link</label>
+                <depends>
+                    <field id="twitter_enable">1</field>
+                </depends>
+            </field>
+        </group>
+
+        <!-- Whatsapp -->
+        <group id="whatsapp" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="30" translate="label">
+            <label>Whatsapp Settings</label>
+
+            <field id="whatsapp_enable" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="select">
+                <label>Enable Whatsapp</label>
+                <frontend_class>on-off-trigger</frontend_class>
+                <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+            </field>
+
+            <field id="whatsapp_link" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="20" translate="label" type="text">
+                <label>Whatsapp Link</label>
+                <depends>
+                    <field id="whatsapp_enable">1</field>
+                </depends>
+            </field>
+        </group>
+
+        <!-- Snapchat -->
+        <group id="snapchat" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="40" translate="label">
+            <label>Snapchat Settings</label>
+
+            <field id="snapchat_enable" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="select">
+                <label>Enable Snapchat</label>
+                <frontend_class>on-off-trigger</frontend_class>
+                <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+            </field>
+
+            <field id="snapchat_link" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="20" translate="label" type="text">
+                <label>Snapchat Link</label>
+                <depends>
+                    <field id="snapchat_enable">1</field>
+                </depends>
+            </field>
+        </group>
+
+        <!-- Tiktok -->
+        <group id="tiktok" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="50" translate="label">
+            <label>Tiktok Settings</label>
+
+            <field id="tiktok_enable" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="select">
+                <label>Enable Tiktok</label>
+                <frontend_class>on-off-trigger</frontend_class>
+                <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+            </field>
+
+            <field id="tiktok_link" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="20" translate="label" type="text">
+                <label>Tiktok Link</label>
+                <depends>
+                    <field id="tiktok_enable">1</field>
+                </depends>
+            </field>
+        </group>
+
+        <!-- Instagram -->
+        <group id="instagram" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="60" translate="label">
+            <label>Instagram Settings</label>
+
+            <field id="instagram_enable" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="select">
+                <label>Enable Instagram</label>
+                <frontend_class>on-off-trigger</frontend_class>
+                <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+            </field>
+
+            <field id="instagram_link" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="20" translate="label" type="text">
+                <label>Instagram Link</label>
+                <depends>
+                    <field id="instagram_enable">1</field>
+                </depends>
+            </field>
+        </group>
+
+        <!-- Linkedin -->
+        <group id="linkedin" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="70" translate="label">
+            <label>Linkedin Settings</label>
+
+            <field id="linkedin_enable" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="select">
+                <label>Enable Linkedin</label>
+                <frontend_class>on-off-trigger</frontend_class>
+                <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+            </field>
+
+            <field id="linkedin_link" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="20" translate="label" type="text">
+                <label>Linkedin Link</label>
+                <depends>
+                    <field id="linkedin_enable">1</field>
+                </depends>
+            </field>
+        </group>
+
+        <!-- Pinterest -->
+        <group id="pinterest" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="80" translate="label">
+            <label>Pinterest Settings</label>
+
+            <field id="pinterest_enable" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="select">
+                <label>Enable Pinterest</label>
+                <frontend_class>on-off-trigger</frontend_class>
+                <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+            </field>
+
+            <field id="pinterest_link" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="20" translate="label" type="text">
+                <label>Pinterest Link</label>
+                <depends>
+                    <field id="pinterest_enable">1</field>
+                </depends>
+            </field>
+        </group>
+    </group>
+</config>

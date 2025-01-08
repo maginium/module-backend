@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <!-- Email Translation Section -->
+    <!-- Define the section for email translations settings -->
+    <section id="trans_email" sortOrder="1149" />
+
+    <!-- Promotion Section -->
+    <!-- Define the section for promotional settings -->
+    <section id="promo" showInDefault="0" showInStore="0" showInWebsite="0" />
+
+    <!-- Configuration Section -->
+    <!-- Define a general configuration section that is hidden from default, store, and website views -->
+    <!-- <section id="configurartion" showInDefault="0" showInStore="0" showInWebsite="0" /> -->
+
+    <!-- RSS / SITEMAP Section -->
+    <!-- Define the section for sitemap settings -->
+    <section id="sitemap" showInDefault="0" showInStore="0" showInWebsite="0" sortOrder="40" />
+</config>

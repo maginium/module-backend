@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/config.xsd">
+    <section id="persistent" sortOrder="300">
+        <group id="options">
+            <field id="enabled">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+            <field canRestore="1" id="remember_enabled">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+            <field canRestore="1" id="remember_default">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+            <field canRestore="1" id="logout_clear">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+            <field canRestore="1" id="shopping_cart">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+        </group>
+    </section>
+</config>

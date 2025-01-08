@@ -1,0 +1,68 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!-- <type name="Magento\Config\Model\Config\Structure\ElementVisibility\ConcealInProduction">
+        <arguments>
+            <argument name="configs" xsi:type="array">
+                <item name="cms" xsi:type="const">Magento\Config\Model\Config\Structure\ElementVisibilityInterface::HIDDEN</item>
+                <item name="cli" xsi:type="const">Magento\Config\Model\Config\Structure\ElementVisibilityInterface::HIDDEN</item>
+                <item name="rss" xsi:type="const">Magento\Config\Model\Config\Structure\ElementVisibilityInterface::HIDDEN</item>
+                <item name="admin" xsi:type="const">Magento\Config\Model\Config\Structure\ElementVisibilityInterface::HIDDEN</item>
+                <item name="oauth" xsi:type="const">Magento\Config\Model\Config\Structure\ElementVisibilityInterface::HIDDEN</item>
+                <item name="audit" xsi:type="const">Magento\Config\Model\Config\Structure\ElementVisibilityInterface::HIDDEN</item>
+                <item name="system" xsi:type="const">Magento\Config\Model\Config\Structure\ElementVisibilityInterface::HIDDEN</item>
+                <item name="webapi" xsi:type="const">Magento\Config\Model\Config\Structure\ElementVisibilityInterface::HIDDEN</item>
+                <item name="web/url" xsi:type="const">Magento\Config\Model\Config\Structure\ElementVisibilityInterface::HIDDEN</item>
+                <item name="reports" xsi:type="const">Magento\Config\Model\Config\Structure\ElementVisibilityInterface::HIDDEN</item>
+                <item name="sitemap" xsi:type="const">Magento\Config\Model\Config\Structure\ElementVisibilityInterface::HIDDEN</item>
+                <item name="analytics" xsi:type="const">Magento\Config\Model\Config\Structure\ElementVisibilityInterface::HIDDEN</item>
+                <item name="sales_pdf" xsi:type="const">Magento\Config\Model\Config\Structure\ElementVisibilityInterface::HIDDEN</item>
+                <item name="affiliate" xsi:type="const">Magento\Config\Model\Config\Structure\ElementVisibilityInterface::HIDDEN</item>
+                <item name="web/secure" xsi:type="const">Magento\Config\Model\Config\Structure\ElementVisibilityInterface::HIDDEN</item>
+                <item name="admin_view" xsi:type="const">Magento\Config\Model\Config\Structure\ElementVisibilityInterface::HIDDEN</item>
+                <item name="web/cookie" xsi:type="const">Magento\Config\Model\Config\Structure\ElementVisibilityInterface::HIDDEN</item>
+                <item name="mst_reports" xsi:type="const">Magento\Config\Model\Config\Structure\ElementVisibilityInterface::HIDDEN</item>
+                <item name="notificator" xsi:type="const">Magento\Config\Model\Config\Structure\ElementVisibilityInterface::HIDDEN</item>
+                <item name="fraud_check" xsi:type="const">Magento\Config\Model\Config\Structure\ElementVisibilityInterface::HIDDEN</item>
+                <item name="web/unsecure" xsi:type="const">Magento\Config\Model\Config\Structure\ElementVisibilityInterface::HIDDEN</item>
+                <item name="magenizr_envbar" xsi:type="const">Magento\Config\Model\Config\Structure\ElementVisibilityInterface::HIDDEN</item>
+                <item name="customersegment" xsi:type="const">Magento\Config\Model\Config\Structure\ElementVisibilityInterface::HIDDEN</item>
+                <item name="clean_admin_menu" xsi:type="const">Magento\Config\Model\Config\Structure\ElementVisibilityInterface::HIDDEN</item>
+                <item name="push_notification" xsi:type="const">Magento\Config\Model\Config\Structure\ElementVisibilityInterface::HIDDEN</item>
+                <item name="login_as_customer" xsi:type="const">Magento\Config\Model\Config\Structure\ElementVisibilityInterface::HIDDEN</item>
+                <item name="recaptcha_backend" xsi:type="const">Magento\Config\Model\Config\Structure\ElementVisibilityInterface::HIDDEN</item>
+                <item name="recaptcha_frontend" xsi:type="const">Magento\Config\Model\Config\Structure\ElementVisibilityInterface::HIDDEN</item>
+                <item name="mgt_developer_toolbar" xsi:type="const">Magento\Config\Model\Config\Structure\ElementVisibilityInterface::HIDDEN</item>
+                <item name="customer/account_share" xsi:type="const">Magento\Config\Model\Config\Structure\ElementVisibilityInterface::HIDDEN</item>
+                <item name="customer/account_information" xsi:type="const">Magento\Config\Model\Config\Structure\ElementVisibilityInterface::HIDDEN</item>
+            </argument>
+        </arguments>
+    </type> -->
+
+    <!-- <type name="Magento\Config\Model\Config\Structure\ElementVisibility\ConcealInProductionWithoutScdOnDemand">
+        <arguments>
+            <argument name="configs" xsi:type="array">
+                <item name="catalog/seo" xsi:type="const">Magento\Config\Model\Config\Structure\ElementVisibilityInterface::HIDDEN</item>
+                <item name="catalog/price" xsi:type="const">Magento\Config\Model\Config\Structure\ElementVisibilityInterface::HIDDEN</item>
+                <item name="sales/orders" xsi:type="const">Magento\Config\Model\Config\Structure\ElementVisibilityInterface::HIDDEN</item>
+                <item name="sales/dashboard" xsi:type="const">Magento\Config\Model\Config\Structure\ElementVisibilityInterface::HIDDEN</item>
+                <item name="customer/startup" xsi:type="const">Magento\Config\Model\Config\Structure\ElementVisibilityInterface::HIDDEN</item>
+                <item name="customer/captcha" xsi:type="const">Magento\Config\Model\Config\Structure\ElementVisibilityInterface::HIDDEN</item>
+                <item name="customer/captcha" xsi:type="const">Magento\Config\Model\Config\Structure\ElementVisibilityInterface::HIDDEN</item>
+                <item name="customer/password" xsi:type="const">Magento\Config\Model\Config\Structure\ElementVisibilityInterface::HIDDEN</item>
+                <item name="catalog/navigation" xsi:type="const">Magento\Config\Model\Config\Structure\ElementVisibilityInterface::HIDDEN</item>
+                <item name="enhanced_pdf/preview" xsi:type="const">Magento\Config\Model\Config\Structure\ElementVisibilityInterface::HIDDEN</item>
+                <item name="catalog/downloadable" xsi:type="const">Magento\Config\Model\Config\Structure\ElementVisibilityInterface::HIDDEN</item>
+                <item name="catalog/custom_options" xsi:type="const">Magento\Config\Model\Config\Structure\ElementVisibilityInterface::HIDDEN</item>
+                <item name="customer/create_account" xsi:type="const">Magento\Config\Model\Config\Structure\ElementVisibilityInterface::HIDDEN</item>
+                <item name="cataloginventory/indexer" xsi:type="const">Magento\Config\Model\Config\Structure\ElementVisibilityInterface::HIDDEN</item>
+                <item name="shipping/shipping_policy" xsi:type="const">Magento\Config\Model\Config\Structure\ElementVisibilityInterface::HIDDEN</item>
+                <item name="catalog/productalert_cron" xsi:type="const">Magento\Config\Model\Config\Structure\ElementVisibilityInterface::HIDDEN</item>
+                <item name="customer/address_templates" xsi:type="const">Magento\Config\Model\Config\Structure\ElementVisibilityInterface::HIDDEN</item>
+                <item name="customer/account_information" xsi:type="const">Magento\Config\Model\Config\Structure\ElementVisibilityInterface::HIDDEN</item>
+                <item name="enhanced_pdf/general/lib_path" xsi:type="const">Magento\Config\Model\Config\Structure\ElementVisibilityInterface::HIDDEN</item>
+                <item name="cataloginventory/bulk_operations" xsi:type="const">Magento\Config\Model\Config\Structure\ElementVisibilityInterface::HIDDEN</item>
+                <item name="enhanced_pdf/general/additional_options" xsi:type="const">Magento\Config\Model\Config\Structure\ElementVisibilityInterface::HIDDEN</item>
+            </argument>
+        </arguments>
+    </type> -->
+</config>

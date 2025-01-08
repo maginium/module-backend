@@ -1,0 +1,60 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/config.xsd">
+    <section id="shipping">
+        <group id="origin" showInDefault="1" showInWebsite="1" sortOrder="1" translate="label" type="text">
+            <field canRestore="1" id="city">
+                <validate>required-entry</validate>
+            </field>
+            <field id="region_id" sortOrder="20" translate="label" type="text">
+                <label>Region/State</label>
+                <validate>required-entry</validate>
+            </field>
+            <field canRestore="1" id="postcode">
+                <validate>required-entry</validate>
+            </field>
+            <field canRestore="1" id="country_id">
+                <validate>required-entry</validate>
+            </field>
+            <field canRestore="1" id="name" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="70" translate="label" type="text">
+                <label>Name</label>
+                <validate>required-entry</validate>
+            </field>
+            <field canRestore="1" id="email" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="80" translate="label" type="text">
+                <label>Email</label>
+                <validate>required-entry</validate>
+            </field>
+            <field canRestore="1" id="mobile" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="90" translate="label" type="text">
+                <label>Mobile</label>
+                <validate>required-entry</validate>
+            </field>
+            <field canRestore="1" id="alt_mobile" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="100" translate="label" type="text">
+                <label>Alternate Mobile</label>
+                <validate>required-entry</validate>
+            </field>
+            <field canRestore="1" id="latitude" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="110" translate="label" type="text">
+                <label>Latitude</label>
+                <validate>number required</validate>
+            </field>
+            <field canRestore="1" id="longitude" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="120" translate="label" type="text">
+                <label>Longitude</label>
+                <validate>number required</validate>
+            </field>
+            <field canRestore="1" id="neighborhood" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="41" translate="label" type="text">
+                <label>Neighborhood</label>
+            </field>
+        </group>
+        <group id="shipping_policy" showInDefault="0" showInStore="0" showInWebsite="0" />
+    </section>
+    <section id="carriers">
+        <group id="rma_free_shipping">
+            <field id="active">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+        </group>
+        <group id="instore">
+            <field id="active">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+        </group>
+    </section>
+</config>

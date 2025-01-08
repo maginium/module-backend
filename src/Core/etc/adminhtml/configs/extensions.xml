@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <!-- 3rd Parties Extensions Tabs -->
+    <!-- <section id="mpquickflushcache" showInDefault="0" showInStore="0" showInWebsite="0" /> -->
+    <!-- <section id="amregenerateurlrewrites" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="1000" translate="label" type="text">
+        <tab>advanced</tab>
+    </section> -->
+    <!-- <section id="mageside_easy_duplicate" showInDefault="0" showInStore="0" showInWebsite="0" sortOrder="99999">
+        <tab>advanced</tab>
+        <group id="hint" showInDefault="0" showInStore="0" showInWebsite="0" />
+    </section> -->
+
+    <!-- <section id="fraud_check" showInDefault="1" showInWebsite="1" showInStore="1" type="text" translate="label" sortOrder="10">
+        <tab>security</tab>
+    </section> -->
+
+    <!-- <section id="mevent" showInDefault="0" showInWebsite="0" showInStore="0" /> -->
+
+    <!-- Defines a section without any additional configuration -->
+    <!-- <section id="plumbase" showInDefault="0" showInStore="0" showInWebsite="0" /> -->
+
+    <!-- Defines a section without any additional configuration -->
+
+    <!-- Defines a section without any additional configuration -->
+
+    <!-- <section id="masscoupondeleteconfig" showInDefault="0" showInWebsite="0" showInStore="0" /> -->
+
+    <!-- Defines a section without any additional configuration -->
+
+    <!-- <section id="newrelicreporting" showInDefault="0" showInWebsite="0" showInStore="0" /> -->
+
+    <!-- Defines a section without any additional configuration -->
+
+    <!-- <section id="mftranslation" showInDefault="0" showInWebsite="0" showInStore="0" sortOrder="100">
+        <tab>content</tab>
+        <group id="general">
+            <field id="enabled">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+            <field id="key" showInDefault="0" showInWebsite="0" showInStore="0"/>
+        </group>
+    </section> -->
+</config>

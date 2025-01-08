@@ -1,0 +1,24 @@
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <!-- Define the columns for the customer listing -->
+    <columns name="customer_columns">
+        <settings>
+            <!-- Set the default values for child elements in the customer listing -->
+            <childDefaults>
+                <!-- Define the field action for the customer listing -->
+                <param xsi:type="array" name="fieldAction">
+                    <!-- The provider specifies where the action handler resides, linking to the customer listing actions -->
+                    <item xsi:type="string" name="provider">customer_listing.customer_listing.customer_columns.actions</item>
+                    <!-- The target specifies the method to be executed when the action is triggered (applyAction) -->
+                    <item xsi:type="string" name="target">applyAction</item>
+                    <!-- The params array defines the parameters passed to the action method -->
+                    <item xsi:type="array" name="params">
+                        <!-- The first parameter specifies the action to perform, which in this case is "edit" -->
+                        <item xsi:type="string" name="0">edit</item>
+                        <!-- The second parameter dynamically passes the row index based on the current data context -->
+                        <item xsi:type="string" name="1">${ $.$data.rowIndex }</item>
+                    </item>
+                </param>
+            </childDefaults>
+        </settings>
+    </columns>
+</listing>

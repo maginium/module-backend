@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <!-- Include tabs configurations for managing admin tabs -->
+        <include path="Maginium_Backend::configs/tabs.xml" />
+
+        <!-- Include tabs configurations for managing admin sections -->
+        <include path="Maginium_Backend::configs/sections.xml" />
+
+        <!-- Include core configurations -->
+        <include path="Maginium_Backend::configs/core.xml" />
+
+        <!-- Include general configurations -->
+        <include path="Maginium_Backend::configs/general.xml" />
+
+        <!-- Include persistent configurations for session persistence settings -->
+        <include path="Maginium_Backend::configs/persistent.xml" />
+
+        <!-- Include shipping configurations related to shipping settings -->
+        <include path="Maginium_Backend::configs/shipping.xml" />
+
+        <!-- Include multi shipping configurations to manage multi shipping options -->
+        <include path="Maginium_Backend::configs/multishipping.xml" />
+
+        <!-- Include newsletter configurations for newsletter settings -->
+        <include path="Maginium_Backend::configs/newsletter.xml" />
+
+        <!-- Wishlist Section -->
+        <!-- Define settings for the wishlist -->
+        <include path="Maginium_Backend::configs/wishlist.xml" />
+
+        <!-- Include extensions configurations -->
+        <include path="Maginium_Backend::configs/extensions.xml" />
+    </system>
+</config>

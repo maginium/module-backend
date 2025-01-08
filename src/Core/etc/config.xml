@@ -1,0 +1,345 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <!-- MF Translation Configuration -->
+        <mftranslation>
+            <general>
+                <!-- Enable MF Translation (1 = enabled) -->
+                <enabled>1</enabled>
+                <!-- API Key for MF Translation -->
+                <key>1x1DfrbAFza4HQrEhJ615BJaHTaTLaPMf</key>
+            </general>
+        </mftranslation>
+
+        <!-- Web API Configuration -->
+        <webapi>
+            <soap>
+                <!-- Set SOAP Charset to UTF-8 -->
+                <charset>UTF-8</charset>
+            </soap>
+        </webapi>
+
+        <!-- General Store Information -->
+        <general>
+            <store_information>
+                <hours>24</hours>
+                <city>Ryadh</city>
+                <phone>+966</phone>
+                <region_id>SA</region_id>
+                <name>Maginium</name>
+                <postcode>41111</postcode>
+                <country_id>SA</country_id>
+                <street_line1>example</street_line1>
+                <holding_company>Pixiedia</holding_company>
+                <merchant_vat_number>123456</merchant_vat_number>
+                <commercial_registration>123456</commercial_registration>
+            </store_information>
+
+            <!-- Social Media Links -->
+            <social_links>
+                <facebook><![CDATA[https://facebook.com/]]></facebook>
+                <twitter><![CDATA[https://twitter.com/]]></twitter>
+                <pinterest><![CDATA[https://www.pinterest.com/]]></pinterest>
+                <snapchat><![CDATA[https://www.snapchat.com/]]></snapchat>
+                <linkedin><![CDATA[https://www.linkedin.com/]]></linkedin>
+                <instagram><![CDATA[https://www.instagram.com/]]></instagram>
+                <tiktok><![CDATA[https://www.tiktok.com/]]></tiktok>
+                <whatsapp><![CDATA[https://www.web.whatsapp.com/]]></whatsapp>
+                <whatsapp><![CDATA[https://wa.link/]]></whatsapp>
+            </social_links>
+
+            <!-- Locale and Country Settings -->
+            <locale>
+                <weight_unit>kgs</weight_unit>
+            </locale>
+
+            <region>
+                <display_all>0</display_all>
+                <state_required>US</state_required>
+            </region>
+
+            <country>
+                <allow>SA</allow>
+                <default>SA</default>
+                <destinations>SA</destinations>
+                <optional_zip_countries>SA</optional_zip_countries>
+            </country>
+        </general>
+
+        <!-- Shipping Configurations -->
+        <multishipping>
+            <options>
+                <checkout_multiple>0</checkout_multiple>
+            </options>
+        </multishipping>
+
+        <!-- Tax Configurations -->
+        <tax>
+            <display>
+                <type>2</type>
+            </display>
+            <classes>
+                <shipping_tax_class>2</shipping_tax_class>
+            </classes>
+            <calculation>
+                <discount_tax>1</discount_tax>
+                <price_includes_tax>1</price_includes_tax>
+                <cross_border_trade_enabled>1</cross_border_trade_enabled>
+                <shipping_includes_tax>2</shipping_includes_tax>
+            </calculation>
+            <cart_display>
+                <price>2</price>
+                <subtotal>2</subtotal>
+            </cart_display>
+            <defaults>
+                <region>840</region>
+                <country>SA</country>
+                <postcode>*</postcode>
+            </defaults>
+        </tax>
+
+        <!-- Development Configurations -->
+        <dev>
+            <js>
+                <merge_files>1</merge_files>
+                <minify_files>1</minify_files>
+                <!-- Minify JS files -->
+                <enable_js_bundling>1</enable_js_bundling>
+                <move_script_to_bottom>1</move_script_to_bottom>
+                <translate_strategy>dictionary</translate_strategy>
+                <session_storage_logging>0</session_storage_logging>
+                <session_storage_key>collected_errors</session_storage_key>
+            </js>
+            <css>
+                <minify_files>0</minify_files>
+                <merge_css_files>0</merge_css_files>
+                <use_css_critical_path>0</use_css_critical_path>
+            </css>
+            <image>
+                <default_adapter>GD2</default_adapter>
+            </image>
+            <caching>
+                <cache_user_defined_attributes>1</cache_user_defined_attributes>
+            </caching>
+        </dev>
+
+        <!-- Web Configuration -->
+        <web>
+            <url>
+                <use_store>1</use_store>
+                <redirect_to_base>301</redirect_to_base>
+            </url>
+            <seo>
+                <use_rewrites>1</use_rewrites>
+            </seo>
+            <!-- Secure URL Configurations (commented out) -->
+            <!-- <secure>
+                <use_in_frontend>1</use_in_frontend>
+                <use_in_adminhtml>1</use_in_adminhtml>
+                <enable_upgrade_insecure>1</enable_upgrade_insecure>
+            </secure> -->
+            <cookie>
+                <cookie_lifetime>31536000</cookie_lifetime>
+            </cookie>
+        </web>
+
+        <!-- SEO Sitemap Configuration -->
+        <seositemap>
+            <frontend>
+                <sitemap_base_url>sitemap</sitemap_base_url>
+                <!-- Base URL for sitemap -->
+            </frontend>
+        </seositemap>
+        <sitemap>
+            <search_engines>
+                <submission_robots>1</submission_robots>
+            </search_engines>
+        </sitemap>
+
+        <!-- Persistent Cart Configuration -->
+        <persistent>
+            <options>
+                <enabled>0</enabled>
+                <logout_clear>0</logout_clear>
+                <remember_enabled>1</remember_enabled>
+                <enablifetimeled>31536000</enablifetimeled>
+            </options>
+        </persistent>
+
+        <!-- System Configuration -->
+        <system>
+            <media_gallery>
+                <enabled>1</enabled>
+            </media_gallery>
+            <media_gallery_renditions>
+                <enabled>1</enabled>
+            </media_gallery_renditions>
+            <upload_configuration>
+                <enable_resize>1</enable_resize>
+            </upload_configuration>
+        </system>
+
+        <!-- Design Configuration -->
+        <design>
+            <search_engine_robots>
+                <!-- Custom instructions for search engine robots -->
+                <custom_instructions>
+                    <![CDATA[
+                        User-agent:*
+                        Disallow: /lib/
+                        Disallow: /*.php$
+                        Disallow: /pkginfo/
+                        Disallow: /report/
+                        Disallow: /var/
+                        Disallow: /catalog/
+                        Disallow: /customer/
+                        Disallow: /sendfriend/
+                        Disallow: /review/
+                        Disallow: /*SID=
+                        Disallow: /checkout/
+                        Disallow: /onestepcheckout/
+                        Disallow: /customer/
+                        Disallow: /customer/account/
+                        Disallow: /customer/account/login
+                        Disallow: /catalogsearch/
+                        Disallow: /catalog/product_compare/
+                        Disallow: /catalog/category/view/
+                        Disallow: /catalog/product/view/
+                        Disallow: /*?dir*
+                        Disallow: /*?dir=desc
+                        Disallow: /*?dir=asc
+                        Disallow: /*?limit=all
+                        Disallow: /?mode
+                        Disallow: /composer.json
+                        Disallow: /composer.lock
+                        Disallow: /CONTRIBUTING.md
+                        Disallow: /CONTRIBUTOR_LICENSE_AGREEMENT.html
+                        Disallow: /COPYING.txt
+                        Disallow: /Gruntfile.js
+                        Disallow: /LICENSE.txt
+                        Disallow: /LICENSE_AFL.txt
+                        Disallow: /nginx.conf.sample
+                        Disallow: /package.json
+                        Disallow: /php.ini.sample
+                        Disallow: /RELEASE_NOTES.txt
+                        Disallow: /app/
+                        Disallow: /bin/
+                        Disallow: /dev/
+                        Disallow: /lib/
+                        Disallow: /phpserver/
+                        Disallow: /pub/
+                        Disallow: / api.php
+                        Disallow: / cron.php
+                        Disallow: / cron.sh
+                        Disallow: / error_log
+                        Disallow: / get.php
+                        Disallow: / install.php
+                        Disallow: / LICENSE.html
+                        Disallow: / LICENSE.txt
+                        Disallow: / LICENSE_AFL.txt
+                        Disallow: / README.txt
+                        Disallow: / RELEASE_NOTES.txt
+                        Disallow: /app/
+                        Disallow: /bin/
+                        Disallow: /dev/
+                        Disallow: /lib/
+                        Disallow: /phpserver/
+                        Disallow: /pub/
+                        Sitemap: /sitemap.xml
+                        ]]>
+                </custom_instructions>
+            </search_engine_robots>
+            <head>
+                <default_title>
+                    <![CDATA[Maginium: Your #1 destination for all Health and Beauty Products in Riyadh, Jeddah, Dammam, Khobar and all Saudi Arabia]]>
+                </default_title>
+                <shortcut_icon>default/favicon.png</shortcut_icon>
+                <title_prefix><![CDATA[]]></title_prefix>
+                <title_suffix>
+                    <![CDATA[| Online shopping in Riyadh, Jeddah, Dammam, Khobar and all Saudi Arabia]]>
+                </title_suffix>
+                <default_description>
+                    <![CDATA[Maginium: Your #1 destination for all Health and Beauty Products in Riyadh, Jeddah, Dammam, Khobar and all Saudi Arabia]]>
+                </default_description>
+                <default_keywords>
+                    <![CDATA[Maginium,Health,Beauty,Riyadh,Jeddah,Dammam,Khobar,Saudi Arabia,KSA,pharmacy,online pharmacy]]>
+                </default_keywords>
+            </head>
+            <footer>
+                <copyright>
+                    <![CDATA[
+                        <p class="no-margin">
+                        &copy;
+                        <span id="current-year">
+                        <script>
+                        document
+                        .getElementById("current-year")
+                        .appendChild(document.createTextNode(new Date().getFullYear()));
+                        </script>
+                        </span>
+                        {{store_name}}. All Rights Reserved.
+                        </p>
+                        ]]>
+                </copyright>
+            </footer>
+        </design>
+
+        <!-- Email Configuration -->
+        <trans_email>
+            <ident_general>
+                <name>
+                    <![CDATA[Maginium]]>
+                </name>
+                <email>
+                    <![CDATA[info@maginium.com]]>
+                </email>
+            </ident_general>
+            <ident_sales>
+                <name>
+                    <![CDATA[Maginium]]>
+                </name>
+                <email>
+                    <![CDATA[order-confirmation@maginium.com]]>
+                </email>
+            </ident_sales>
+            <ident_support>
+                <name>
+                    <![CDATA[Maginium]]>
+                </name>
+                <email>
+                    <![CDATA[care@maginium.com]]>
+                </email>
+            </ident_support>
+            <ident_custom1>
+                <name>
+                    <![CDATA[Maginium]]>
+                </name>
+                <email>
+                    <![CDATA[info@maginium.com]]>
+                </email>
+            </ident_custom1>
+            <ident_custom2>
+                <name>
+                    <![CDATA[Maginium]]>
+                </name>
+                <email>
+                    <![CDATA[online@maginium.com]]>
+                </email>
+            </ident_custom2>
+        </trans_email>
+
+        <!-- Newsletter Configuration -->
+        <newsletter>
+            <subscription>
+                <allow_guest_subscribe>0</allow_guest_subscribe>
+            </subscription>
+        </newsletter>
+
+        <!-- Default Cache Configuration -->
+        <default_cache_config>
+            <cache>
+                <general_cache_lifetime>86400</general_cache_lifetime>
+            </cache>
+        </default_cache_config>
+    </default>
+</config>

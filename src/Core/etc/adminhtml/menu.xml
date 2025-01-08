@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <!-- REMOVE UNNECESSARY MENU ITEMS -->
+        <remove id="Magento_Theme::system_design_theme" />
+        <remove id="Magento_Widget::cms_widget_instance" />
+        <remove id="Magento_Backend::system_other_settings" />
+        <remove id="Magento_Backend::system_design_schedule" />
+        <remove id="Magento_AsynchronousOperations::system_magento_logging" />
+
+        <!-- UPDATE EXISTING MENU ITEMS -->
+        <!-- Update Design System menu item -->
+        <update
+            id="Magento_Backend::design_system"
+            module="Magento_Backend"
+            parent="Magento_Backend::system"
+            resource="Magento_Backend::design"
+            sortOrder="20"
+            title="Design"
+            translate="title"
+        />
+
+        <!-- Update General Settings menu item under Design -->
+        <update
+            action="theme/design_config"
+            id="Magento_Theme::design_config"
+            module="Magento_Theme"
+            parent="Magento_Backend::design_system"
+            resource="Magento_Config::config_design"
+            sortOrder="10"
+            title="General Settings"
+            translate="title"
+        />
+
+        <!-- Update Import/Export Tax Rates menu item -->
+        <update
+            action="tax/rate/importExport"
+            id="Magento_TaxImportExport::system_convert_tax"
+            module="Magento_TaxImportExport"
+            parent="Magento_Tax::sales_tax"
+            resource="Magento_TaxImportExport::import_export"
+            sortOrder="30"
+            title="Import/Export Tax Rates"
+        />
+
+        <!-- Update Index Management menu item -->
+        <update
+            action="indexer/indexer/list"
+            id="Magento_Indexer::system_index"
+            module="Magento_Indexer"
+            parent="Magento_Backend::system_tools"
+            resource="Magento_Indexer::index"
+            sortOrder="20"
+            title="Index Management"
+            translate="title"
+        />
+    </menu>
+</config>

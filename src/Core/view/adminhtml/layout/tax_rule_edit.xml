@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<page
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd"
+>
+    <!-- Define the body of the page -->
+    <body>
+        <!-- Remove the tax-rate-importExport block from the layout -->
+        <referenceBlock name="tax-rate-importExport" remove="true" />
+    </body>
+</page>

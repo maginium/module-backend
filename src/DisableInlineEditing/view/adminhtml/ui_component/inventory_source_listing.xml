@@ -1,0 +1,27 @@
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <!-- Define the columns for the inventory source listing -->
+    <columns name="inventory_source_listing_columns">
+        <settings>
+            <!-- Set the default values for child elements in the inventory source listing -->
+            <childDefaults>
+                <!-- Define the field action for the inventory source listing columns -->
+                <param xsi:type="array" name="fieldAction">
+                    <!-- The provider specifies where the action handler resides, linking to actions for inventory source listing columns -->
+                    <item
+                        xsi:type="string"
+                        name="provider"
+                    >inventory_source_listing.inventory_source_listing.inventory_source_listing_columns.actions</item>
+                    <!-- The target specifies the method to execute when the action is triggered (applyAction) -->
+                    <item xsi:type="string" name="target">applyAction</item>
+                    <!-- The params array defines the parameters that will be passed to the action method -->
+                    <item xsi:type="array" name="params">
+                        <!-- The first parameter indicates the action to perform (edit) -->
+                        <item xsi:type="string" name="0">edit</item>
+                        <!-- The second parameter dynamically passes the row index from the current data context -->
+                        <item xsi:type="string" name="1">${ $.$data.rowIndex }</item>
+                    </item>
+                </param>
+            </childDefaults>
+        </settings>
+    </columns>
+</listing>

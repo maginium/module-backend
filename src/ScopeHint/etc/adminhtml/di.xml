@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!-- Plugin configuration for Magento Config Field -->
+    <type name="Magento\Config\Model\Config\Structure\Element\Field">
+        <plugin
+            disabled="false"
+            name="scopehint_plugin_add_tooltip_to_product_field"
+            sortOrder="1"
+            type="Maginium\ScopeHint\Interceptors\ConfigFieldPlugin"
+        />
+    </type>
+
+    <!-- Plugin configuration for Magento Catalog EAV Data Provider -->
+    <type name="Magento\Catalog\Ui\DataProvider\Product\Form\Modifier\Eav">
+        <plugin
+            disabled="false"
+            name="scopehint_plugin_field"
+            sortOrder="1"
+            type="Maginium\ScopeHint\Interceptors\ProductEavDataProviderPlugin"
+        />
+    </type>
+</config>

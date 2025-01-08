@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <section id="wishlist">
+        <group id="general">
+            <!-- Settings for wishlist activation and sidebar visibility -->
+            <field id="active">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+            <field id="show_in_sidebar">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+        </group>
+    </section>
+</config>

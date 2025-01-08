@@ -1,0 +1,76 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/config.xsd">
+    <!-- General Section -->
+    <section id="general" sortOrder="10">
+        <label>General</label>
+
+        <!-- Region Group -->
+        <group id="region">
+            <field canRestore="1" id="display_all">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+        </group>
+
+        <!-- Restriction Group -->
+        <group id="restriction">
+            <field canRestore="1" id="is_active">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+        </group>
+
+        <!-- Single Store Mode Group -->
+        <group id="single_store_mode">
+            <field id="enabled">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+        </group>
+
+        <!-- Store Information Group -->
+        <group id="store_information" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="100" translate="label" type="text">
+            <field id="email" showInDefault="1" showInStore="0" showInWebsite="1" sortOrder="21" translate="label" type="text">
+                <label>Email</label>
+                <can_be_empty>0</can_be_empty>
+            </field>
+            <!-- Add other fields related to store information -->
+        </group>
+
+        <!-- Design Group -->
+        <group id="design" sortOrder="301" translate="label">
+            <label>Default Desing Configuration</label>
+            <field canRestore="1" id="head_shortcut_icon" sortOrder="10" translate="label comment" type="image">
+                <label>Favicon</label>
+                <backend_model>Magento\Config\Model\Config\Backend\Image</backend_model>
+                <upload_dir config="system/filesystem/media" scope_info="1">favicon</upload_dir>
+                <base_url scope_info="1" type="media">favicon</base_url>
+                <config_path>design/head/shortcut_icon</config_path>
+            </field>
+            <field canRestore="1" id="default_title" sortOrder="20" translate="label" type="text">
+                <label>Default Page Title</label>
+                <config_path>design/head/default_title</config_path>
+            </field>
+            <field canRestore="1" id="title_prefix" sortOrder="30" translate="label" type="text">
+                <label>Page Title Prefix</label>
+                <config_path>design/head/title_prefix</config_path>
+            </field>
+            <field canRestore="1" id="title_suffix" sortOrder="40" translate="label" type="text">
+                <label>Page Title Suffix</label>
+                <config_path>design/head/title_suffix</config_path>
+            </field>
+            <field canRestore="1" id="default_description" sortOrder="50" translate="label" type="text">
+                <label>Default Meta Description</label>
+                <config_path>design/head/default_description</config_path>
+            </field>
+            <field canRestore="1" id="default_keywords" sortOrder="60" translate="label" type="text">
+                <label>Default Meta Keywords</label>
+                <config_path>design/head/default_keywords</config_path>
+            </field>
+            <field canRestore="1" id="copyright" showInDefault="0" showInStore="0" showInWebsite="0" sortOrder="70" translate="label" type="text">
+                <label>Copyright</label>
+                <config_path>design/footer/copyright</config_path>
+            </field>
+        </group>
+
+        <!-- Include Social Media configurations -->
+        <include path="Maginium_Backend::configs/social_media.xml" />
+    </section>
+</config>

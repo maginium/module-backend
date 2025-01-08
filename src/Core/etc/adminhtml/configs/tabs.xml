@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <!-- General Tab -->
+    <tab class="general-tab" id="general" sortOrder="10" translate="label">
+        <label>General</label>
+    </tab>
+
+    <!-- Advanced Tab -->
+    <tab class="advanced-tab" id="advanced" sortOrder="9999" translate="label">
+        <label>Advanced</label>
+    </tab>
+
+    <!-- Services Tab -->
+    <tab class="service-tab" id="service" sortOrder="9999" translate="label">
+        <label>Services</label>
+    </tab>
+
+    <!-- Security Tab -->
+    <tab class="security-tab" id="security" sortOrder="9999" translate="label">
+        <label>Security</label>
+    </tab>
+
+    <!-- Marketing Tab -->
+    <tab class="marketing-tab" id="marketing" sortOrder="200" translate="label">
+        <label>Marketing</label>
+    </tab>
+</config>

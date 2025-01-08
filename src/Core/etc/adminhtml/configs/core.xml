@@ -1,0 +1,309 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <!-- CMS Pages Configurations -->
+    <section id="web" sortOrder="1144">
+        <group id="default_layouts" showInDefault="0" showInStore="0" showInWebsite="0" />
+
+        <group id="default" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="20" translate="label" type="text">
+            <label>CMS Pages Configurations</label>
+            <field id="show_cms_breadcrumbs" sortOrder="0">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+            <field canRestore="1" id="cms_about" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="3" translate="label" type="select">
+                <label>About Page</label>
+                <source_model>Magento\Cms\Model\Config\Source\Page</source_model>
+            </field>
+            <field
+                canRestore="1"
+                id="cms_terms_of_use"
+                showInDefault="1"
+                showInStore="1"
+                showInWebsite="1"
+                sortOrder="4"
+                translate="label"
+                type="select"
+            >
+                <label>Terms Of Use Page</label>
+                <source_model>Magento\Cms\Model\Config\Source\Page</source_model>
+            </field>
+            <field
+                canRestore="1"
+                id="cms_privacy_policy"
+                showInDefault="1"
+                showInStore="1"
+                showInWebsite="1"
+                sortOrder="4"
+                translate="label"
+                type="select"
+            >
+                <label>Privacy Policy Page</label>
+                <source_model>Magento\Cms\Model\Config\Source\Page</source_model>
+            </field>
+            <field canRestore="1" id="cms_help" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="5" translate="label" type="select">
+                <label>Help Page</label>
+                <source_model>Magento\Cms\Model\Config\Source\Page</source_model>
+            </field>
+            <field canRestore="1" id="cms_vat" showInDefault="6" showInStore="1" showInWebsite="1" sortOrder="6" translate="label" type="select">
+                <label>VAT Page</label>
+                <source_model>Magento\Cms\Model\Config\Source\Page</source_model>
+            </field>
+        </group>
+
+        <!-- Secure group -->
+        <group id="secure">
+            <field canRestore="1" id="use_in_frontend">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+            <field canRestore="1" id="use_in_adminhtml">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+            <field canRestore="1" id="enable_hsts">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+            <field canRestore="1" id="enable_upgrade_insecure">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+        </group>
+
+        <!-- URL group -->
+        <group id="url">
+            <field canRestore="1" id="use_store">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+        </group>
+
+        <!-- SEO group -->
+        <group id="seo" showInDefault="0" showInStore="0" showInWebsite="0">
+            <field canRestore="1" id="use_rewrites">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+        </group>
+
+        <!-- Cookie group -->
+        <group id="cookie">
+            <field canRestore="1" id="cookie_httponly">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+            <field canRestore="1" id="cookie_restriction">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+        </group>
+
+        <!-- Captcha group -->
+        <group id="captcha">
+            <field id="enable">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+        </group>
+
+        <!-- Browser capabilities group -->
+        <group id="browser_capabilities" showInDefault="0" showInStore="0" showInWebsite="0">
+            <field canRestore="1" id="cookies">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+            <field canRestore="1" id="javascript">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+            <field canRestore="1" id="local_storage">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+        </group>
+
+        <!-- Session group -->
+        <group id="session" showInDefault="0" showInStore="0" showInWebsite="0">
+            <field canRestore="1" id="use_remote_addr">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+            <field canRestore="1" id="use_http_via">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+            <field canRestore="1" id="use_http_x_forwarded_for">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+            <field canRestore="1" id="use_http_user_agent">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+        </group>
+    </section>
+
+    <!-- Admin Section -->
+    <section id="admin" sortOrder="10">
+        <group id="url">
+            <field canRestore="1" id="use_custom">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+            <field canRestore="1" id="use_custom_path">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+        </group>
+        <group id="security">
+            <field canRestore="1" id="admin_account_sharing">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+            <field canRestore="1" id="use_form_key">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+            <field canRestore="1" id="use_case_sensitive_login">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+        </group>
+        <group id="usage">
+            <field id="enabled">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+        </group>
+        <group id="dashboard">
+            <field canRestore="1" id="enable_charts">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+        </group>
+        <group id="captcha">
+            <field id="enable">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+            <field id="case_sensitive">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+        </group>
+    </section>
+
+    <!-- Dev Section -->
+    <section id="dev" sortOrder="40">
+        <!-- Translate Inline group -->
+        <group id="translate_inline">
+            <field id="active">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+            <field canRestore="1" id="active_admin">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+        </group>
+
+        <!-- Caching group -->
+        <group id="caching">
+            <field canRestore="1" id="cache_user_defined_attributes">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+        </group>
+
+        <!-- Static group -->
+        <group id="static">
+            <field canRestore="1" id="sign">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+        </group>
+
+        <!-- Grid group -->
+        <group id="grid">
+            <field canRestore="1" id="async_indexing">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+        </group>
+
+        <!-- Template group -->
+        <group id="template">
+            <field canRestore="1" id="allow_symlink">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+            <field canRestore="1" id="minify_html">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+        </group>
+
+        <!-- Debug group -->
+        <group id="debug">
+            <field canRestore="1" id="template_hints_admin">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+            <field canRestore="1" id="template_hints_blocks">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+            <field canRestore="1" id="template_hints_storefront">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+            <field canRestore="1" id="template_hints_storefront_show_with_parameter">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+        </group>
+
+        <!-- JS group -->
+        <group id="js">
+            <field canRestore="1" id="merge_files">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+            <field canRestore="1" id="enable_js_bundling">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+            <field canRestore="1" id="minify_files">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+            <field canRestore="1" id="move_script_to_bottom">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+            <field canRestore="1" id="session_storage_logging">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+        </group>
+
+        <!-- CSS group -->
+        <group id="css">
+            <field canRestore="1" id="merge_css_files">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+            <field canRestore="1" id="use_css_critical_path">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+            <field canRestore="1" id="minify_files">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+        </group>
+    </section>
+
+    <!-- System Section -->
+    <section id="system" sortOrder="30">
+        <group id="media_gallery_renditions">
+            <field id="enabled">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+        </group>
+        <group id="adminnotification">
+            <field canRestore="1" id="use_https">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+        </group>
+        <group id="upload_configuration">
+            <field canRestore="1" id="enable_resize">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+        </group>
+        <group id="media_gallery">
+            <field id="enabled">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+        </group>
+        <group id="cron" showInDefault="0" showInStore="0" showInWebsite="0" />
+        <group id="mysqlmq" showInDefault="0" showInStore="0" showInWebsite="0" />
+        <group id="smtp" showInDefault="0" showInStore="0" showInWebsite="0">
+            <field id="disable">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+            <field id="set_return_path">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+        </group>
+        <group id="backup" showInDefault="0" showInStore="0" showInWebsite="0" />
+        <group id="bulk" showInDefault="0" showInStore="0" showInWebsite="0" />
+    </section>
+
+    <!-- Services Section -->
+    <section id="oauth" sortOrder="96" />
+    <section id="webapi" sortOrder="97">
+        <label>Web API</label>
+        <group id="soap" showInDefault="0" showInStore="0" showInWebsite="0" />
+        <group id="webapisecurity">
+            <field id="allow_insecure">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+        </group>
+    </section>
+</config>

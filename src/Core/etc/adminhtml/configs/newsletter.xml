@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <section id="newsletter">
+        <group id="general">
+            <field id="active">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+        </group>
+        <group id="subscription">
+            <field id="allow_guest_subscribe">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+            <field id="confirm">
+                <frontend_class>on-off-trigger</frontend_class>
+            </field>
+        </group>
+    </section>
+</config>

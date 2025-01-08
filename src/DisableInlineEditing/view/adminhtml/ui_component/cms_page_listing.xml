@@ -1,0 +1,24 @@
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <!-- Define the columns for the CMS page listing -->
+    <columns name="cms_page_columns">
+        <settings>
+            <!-- Set the default values for child elements in the CMS page listing -->
+            <childDefaults>
+                <!-- Define the field action for the CMS page listing -->
+                <param xsi:type="array" name="fieldAction">
+                    <!-- The provider defines the action handler, linking to a specific action within the CMS page listing -->
+                    <item xsi:type="string" name="provider">cms_page_listing.cms_page_listing.cms_page_columns.actions</item>
+                    <!-- The target specifies the method that will be called when the action is triggered -->
+                    <item xsi:type="string" name="target">applyAction</item>
+                    <!-- The params array defines the parameters to be passed to the action method -->
+                    <item xsi:type="array" name="params">
+                        <!-- The first parameter specifies the action to be performed, which is "edit" in this case -->
+                        <item xsi:type="string" name="0">edit</item>
+                        <!-- The second parameter passes the row index dynamically based on the current context -->
+                        <item xsi:type="string" name="1">${ $.$data.rowIndex }</item>
+                    </item>
+                </param>
+            </childDefaults>
+        </settings>
+    </columns>
+</listing>
