@@ -12,11 +12,6 @@
 
     <!-- Plugin configuration for Magento Catalog EAV Data Provider -->
     <type name="Magento\Catalog\Ui\DataProvider\Product\Form\Modifier\Eav">
-        <plugin
-            disabled="false"
-            name="scopehint_plugin_field"
-            sortOrder="1"
-            type="Maginium\ScopeHint\Interceptors\ProductEavDataProviderPlugin"
-        />
+        <plugin disabled="false" name="scopehint_plugin_field" sortOrder="1" type="Maginium\ScopeHint\Interceptors\ProductEavDataProviderPlugin" />
     </type>
 </config>

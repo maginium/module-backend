@@ -11,6 +11,7 @@ use Magento\Store\Api\Data\StoreInterface;
 use Magento\Store\Api\Data\WebsiteInterface;
 use Magento\Store\Api\StoreRepositoryInterface;
 use Magento\Store\Api\WebsiteRepositoryInterface;
+use Maginium\Framework\Support\Arr;
 use Maginium\Framework\Support\Facades\Config;
 use Maginium\Framework\Support\Facades\Request;
 use Maginium\Framework\Support\Php;
@@ -118,7 +119,7 @@ class ConfigFieldPlugin
             }
 
             // Return the combined tooltip lines as HTML, separating them with a line break
-            return Php::implode('<br />', array_filter($lines));
+            return Php::implode('<br />', Arr::filter($lines));
         }
 
         // Return the original tooltip if not in developer mode
